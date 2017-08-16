@@ -27,10 +27,12 @@ Vou mostrar como contribuir em 4 passos sem ter que instalar nada, usando apenas
 
 ![passo-3](https://snag.gy/EJerxK.jpg)
 
+<br>
+<br>
 <hr>
 <br>
 <br>
-<br>
+P.S.:
 Se quiser testar no seu projeto antes de enviar o PR (aka Pull Pequest), você pode configurar o seu repositório para gerar uma URL com o Jekyll indo até a tab Settings na seção GitHub Pages e deixando-a configurada como a imagem abaixo
 
 ![passo-3](https://snag.gy/GVbsZI.jpg)
