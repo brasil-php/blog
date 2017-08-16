@@ -21,4 +21,11 @@ Vou mostrar como contribuir em 4 passos sem ter que instalar nada, usando apenas
 
 3. No começo do arquivo crie uma tabela e descreva os detalhes do `post` no seguinte formato <p align="center"><img src="https://snag.gy/G3BXiA.jpg"></p>
 
-4. Salve o arquivo com o conteúdo e submeta um PR ao repositório principal
+4. Salve o arquivo com o conteúdo e submeta um PR ao repositório principal, indo até a tab de `Pull requests` do seu fork e clicando em `New pull request`
+<p align="center"><img src="https://snag.gy/EJerxK.jpg"></p>
+
+----
+
+Se quiser testar no seu antes de publicar você pode configurar o seu repositório para gerar uma URL com o Jekyll indo até a tab Settings na seção GitHub Pages e deixando-a configurada como a imagem abaixo
+<p align="center"><img src="https://snag.gy/GVbsZI.jpg"></p>
+
