@@ -7,7 +7,7 @@ categories: Ajuda
 Sejam bem-vindos ao nosso blog!
 
 Estamos muito felizes de compartilhar com vocês os conhecimentos que são discutidos e trocados no nosso grupo.
-Nosso grupo tem mais de 1.7k de membros e há troca de mensagens com volumnes impressionantes. São abordados temas desde os mais básicos sobre configuração de ambiente e programação até discussão avançadas sobre abstração e metodologias de engenharia e arquitetura de software.
+Nossa [comununidade no Telegram](https://t.me/phpbrasil) tem mais de 1.7k de membros e há troca de mensagens com volumes impressionantes. São abordados temas desde os mais básicos sobre configuração de ambiente e programação até discussão avançadas sobre abstração e metodologias de engenharia e arquitetura de software. Com esse canal de publicação vamos publicar materiais que visam a deixar disponível de forma organizada os assuntos abordados.
 
 Se você chegou até aqui está procurando saber saber como participar do blog e vou tentar ser o mais breve e prático possível.
 
