@@ -15,15 +15,15 @@ Estamos usando Jekyll como plataforma para publicação dos artigos, então reco
 
 Vou mostrar como contribuir em 4 passos sem ter que instalar nada, usando apenas o próprio Github:
 
-1. Acesse com sua conta o [Github](https://github.com) e crie um fork do [projeto](https://github.com/brasil-php/blog)
+Passo 1. Acesse com sua conta o [Github](https://github.com) e crie um fork do [projeto](https://github.com/brasil-php/blog)
 
-2. Vá até a pasta `_posts` e veja que tem alguns documentos lá com a data e o título como nome. Crie um novo arquivo informando a data e o título (sem acentos e sem com hífen no lugar dos espaços)
+Passo 2. Vá até a pasta `_posts` e veja que tem alguns documentos lá com a data e o título como nome. Crie um novo arquivo informando a data e o título (sem acentos e sem com hífen no lugar dos espaços)
 
-3. No começo do arquivo crie uma tabela e descreva os detalhes do `post` no seguinte formato 
+Passo 3. No começo do arquivo crie uma tabela e descreva os detalhes do `post` no seguinte formato 
 
 <p align="center"><kbd><img src="https://snag.gy/G3BXiA.jpg"></kbd></p>
 
-4. Salve o arquivo com o conteúdo e submeta um PR ao repositório principal, indo até a tab de `Pull requests` do seu fork e clicando em `New pull request`
+Passo 4. Salve o arquivo com o conteúdo e submeta um PR ao repositório principal, indo até a tab de `Pull requests` do seu fork e clicando em `New pull request`
 
 <p align="center"><kbd><img src="https://snag.gy/EJerxK.jpg"></p>
 
