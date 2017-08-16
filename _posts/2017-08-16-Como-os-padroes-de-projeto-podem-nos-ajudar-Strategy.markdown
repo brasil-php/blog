@@ -1,4 +1,4 @@
-#Como os padrões de projeto nos ajudam a melhorar? Strategy
+# Como os padrões de projeto nos ajudam a melhorar? Strategy
 
 Esta semana eu me deparei com um problema aparentemente difícil: usar uma mesma classe para ordenar diversos tipos de objetos.
 
@@ -178,7 +178,7 @@ Os nomes de usuários foram ordenados acentuadamente, mas a outra entidade não,
 
 Padrões de projeto são pequenas arquiteturas focadas em resolver problemas, neste caso, vamos usar o strategy, vejamos o que ele nos diz:
 
-##Qual o objetivo do Strategy pattern?
+## Qual o objetivo do Strategy pattern?
 
 Alterar um algoritmo em tempo de execução apenas conhecendo sua interface. Segundo Erich Gamma (et all — Gamma, Erich et all. Padrões de projeto — Soluções reutilizáveis de software orientado a objetos. 2000, Bookman):
 
@@ -187,11 +187,11 @@ Definir uma família de algoritmos, encapsular cada uma delas e torná-las inter
 Strategy permite que o algoritmo varie independentemente dos clientes que o utilizam.
 ```
 
-##Aplicabilidade
+## Aplicabilidade
 
 Você necessita de variantes de um algoritmo. Por exemplo, pode definir algoritmos que refletem diferentes soluções de compromisso entre espaço/ tempo. As estratégias podem ser usadas quando essas variantes são implementadas como uma hierarquia de classes de algoritmos
 
-##Vantagens, desvantagens e consequências
+## Vantagens, desvantagens e consequências
 
 Estratégias eliminam comandos condicionais da linguagem de programação. O padrão Strategy oferece uma alternativa ao uso de comandos condicionais para a seleção de comportamentos desejados. Quando diferentes comportamentos são agrupados em uma classe é difícil evitar o uso de comandos condicionais para a seleção do comportamento correto.O encapsulamento do comportamento em classes Strategy separadas elimina estes comandos condicionais.
 
