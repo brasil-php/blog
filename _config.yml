@@ -22,6 +22,8 @@ baseurl: "/blog/" # the subpath of your site, e.g. /blog
 url: "https://brasil-php.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: brasil-php
 github_username:  brasil-php
+disqus:
+  shortname: https-brasil-php-github-io-blog
 
 # Build settings
 markdown: kramdown
