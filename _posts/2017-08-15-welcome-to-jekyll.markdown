@@ -2,7 +2,8 @@
 layout: post
 title:  "Como contribuir!"
 date:   2017-08-15 21:43:19 -0300
-categories: Ajuda
+categories: ajuda
+author: "William Correa"
 ---
 Sejam bem-vindos ao nosso blog!
 
