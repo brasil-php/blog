@@ -45,4 +45,4 @@ Quando for trabalhar em uma tecnologia, esqueça atalhos, use conteúdos de blog
 
 Do ponto de vista técnico, cheque TODOS os arquivos envolvidos no seu projeto, mesmo o de terceiros... Se não puder verificar o de terceiros, repense o seu uso. Deixe com acesso externo APENAS o que você tem CERTEZA que não expôe nenhum dado sensível da sua aplicação e que não pode ser executado.
 
-O recado está dado! Abraços e até a próxima. Nunca se esqueça que programar é pensar!
+O recado está dado! Nunca se esqueça que programar é pensar! Abraços e até a próxima.
