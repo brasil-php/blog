@@ -31,7 +31,7 @@ function get($index, $filter = FILTER_DEFAULT)
 
 Nossa, mas de onde você está tirando esses filtros? Daqui ó [http://php.net/filters](http://php.net/manual/en/filter.filters.php)
 
-Obviamente que seria possível melhorar outras coisas, mas vamos começando por ai é o suficiente.
+Obviamente que seria possível melhorar outras coisas, mas vamos começando por ai; é o suficiente por agora.
 
 # Ah, não preciso de nada disso, porque eu uso um framework!
 
@@ -45,4 +45,4 @@ Quando for trabalhar em uma tecnologia, esqueça atalhos, use conteúdos de blog
 
 Do ponto de vista técnico, cheque TODOS os arquivos envolvidos no seu projeto, mesmo o de terceiros... Se não puder verificar o de terceiros, repense o seu uso. Deixe com acesso externo APENAS o que você tem CERTEZA que não expôe nenhum dado sensível da sua aplicação e que não pode ser executado.
 
-O recado está dado! Abraços e até a próxima.
+O recado está dado! Abraços e até a próxima. Nunca se esqueça que programar é pensar!
