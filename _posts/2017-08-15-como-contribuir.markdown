@@ -18,7 +18,7 @@ Vou mostrar como contribuir em 4 passos sem ter que instalar nada, usando apenas
 
 **Passo 1.** Acesse com sua conta o [Github](https://github.com) e crie um fork do [projeto](https://github.com/brasil-php/blog)
 
-**Passo 2.** Vá até a pasta `_posts` e veja que tem alguns documentos lá com a data e o título como nome. Crie um novo arquivo informando a data e o título (sem acentos e sem com hífen no lugar dos espaços)
+**Passo 2.** Vá até a pasta `_posts` e veja que tem alguns documentos lá com a data e o título como nome. Crie um novo arquivo informando a data e o título (sem acentos e com hífen no lugar dos espaços)
 
 **Passo 3.** No começo do arquivo crie uma tabela e descreva os detalhes do `post` no seguinte formato 
 
