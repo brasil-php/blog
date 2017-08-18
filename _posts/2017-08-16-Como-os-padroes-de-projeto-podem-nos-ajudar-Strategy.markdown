@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Como os padrões de projeto nos ajudam a melhorar? Strategy"
-date:   2017-08-16 12:43:19 -0300
+title: "Como os padrões de projeto nos ajudam a melhorar? Strategy"
+date: 2017-08-16 12:43:19 -0300
 categories: dica
 author: "Igor C. de Paula"
 ---
-
 # Como os padrões de projeto nos ajudam a melhorar? Strategy
 
 Esta semana eu me deparei com um problema aparentemente difícil: usar uma mesma classe para ordenar diversos tipos de objetos.
