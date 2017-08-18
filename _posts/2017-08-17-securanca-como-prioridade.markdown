@@ -9,7 +9,7 @@ O assunto desse post é simples, muito simples. É dar um recado na verdade.
 
 > Cuide do seu projeto antes que seja tarde demais
 
-Indiferente a forma com que você escreve seu código ou crie o seu projeto, se usa Orientaço a Objeto, programação funcional, procedural, nada disso, ou se você faz testes, TDD, BDD, independente de SOLID, DRY, ou qualquer outro acrônimo, até de PSR... tem uma única coisa que TODOS, eu disse, invariavelmente TODOS os programadores (principalmente os da web) precisam se precisam ter como premissa básica SEGURANÇA.
+Indiferente a forma com que você escreve seu código ou crie o seu projeto, se usa orientaço a objeto, programação funcional, procedural, nada disso, ou se você faz testes, TDD, BDD, independente de SOLID, DRY, ou qualquer outro acrônimo, até de PSR... tem uma única coisa que TODOS, eu disse, invariavelmente TODOS os programadores (principalmente os da web) precisam ter como premissa básica SEGURANÇA.
 
 Sim, um mínimo de SEGURANÇA, é só isso que te peço!
 
