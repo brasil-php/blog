@@ -5,7 +5,7 @@ date:   2017-08-17 21:46:00 -0300
 categories: securança
 author: "William Correa"
 ---
-O assunto desse post é simples, muito simples na verdade. É dar um recado na verdade.
+O assunto desse post é simples, muito simples. É dar um recado na verdade.
 
 > Cuide do seu projeto antes que seja tarde demais
 
