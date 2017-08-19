@@ -3,7 +3,7 @@ layout: page
 title: Sobre
 permalink: /sobre/
 description: "Blog Comundade PHP Brasil"
-header-img: "assets/img/elephant.jpg"
+header-img: "blog/assets/img/elephant.jpg"
 ---
 
 # Sobre o blog
