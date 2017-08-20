@@ -6,9 +6,9 @@ categories: reflexao
 author: "William Correa"
 ---
 
-Não é de hoje que gasto umas boas horas do meu dia pensando em como ser um desenvolvedor melhor. Provavelmente por ter feito um caminho diferente da maioria dos colegas de trabalho, tenha sido uma constante na minha carreira como programador ter que aprender duas vezes mais rápido. Enquanto meus colegas de profissão geralmente começaram cedo com algum interesse por computadores e interagindo com programação em algum nível eu só li um código-fonte por volta dos 26 anos de idade.
+Não é de hoje que gasto umas boas horas do meu dia pensando em como ser um desenvolvedor melhor. Provavelmente por ter feito um caminho diferente da maioria dos colegas de trabalho, tenha sido uma constante na minha carreira como programador ter que aprender duas vezes mais rápido. Enquanto meus colegas de profissão geralmente começaram cedo com algum interesse por computadores e interagindo com programação em algum nível eu só li um código-fonte por volta dos 26.
 
-Embora a minha parte técnica tenha ficado defasada em relação a alguns aspectos eu tinha uma experiência normal de quem trabalha. e programar é um trabalho como outro qualquer. Vou tentar descrever a seguir quais passos eu gostaria de ter seguido na adolescência e que será a carta que deixarei pra mim quando tiver a oportunidade de voltar aos anos 90.
+Embora a minha parte técnica tenha ficado defasada em relação a alguns aspectos eu tinha uma experiência normal de quem trabalha; e programar é um trabalho como outro qualquer. Vou tentar descrever a seguir quais passos eu gostaria de ter seguido na adolescência e que será a carta que deixarei pra mim quando tiver a oportunidade de voltar aos anos 90.
 
 - Mostre seu rosto: sua carreira como desenvolvedor começa no primeiro fórum que você entrar, na primeira pergunta que fizer, no primeiro blog que criar, então crie sua identidade e torne-se conhecido porque é o network que vai alavancar sua carreira e não a sua capacidade de escrever códigos (#root e emojis em seus nicks devem bonitos para a turminha de vocês, no mundo real isso é uma desvantagem);
 
