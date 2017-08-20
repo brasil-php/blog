@@ -6,7 +6,7 @@ categories: reflexao
 author: "William Correa"
 ---
 
-Não é de hoje que gasto umas boas horas do meu dia pensando em como ser um desenvolvedor melhor. Provavelmente por ter feito um caminho diferente da maioria dos colegas de trabalho, tenha sido uma constante na minha carreira como programador ter que aprender duas vezes mais rápido. Enquanto meus colegas de profissão geralmente começaram cedo com algum interesse por computadores e interagindo com programação em algum nível eu só li um código-fonte por volta dos 26.
+Não é de hoje que gasto umas boas horas do meu dia pensando em como ser um desenvolvedor melhor. Provavelmente por ter feito um caminho diferente da maioria dos colegas de trabalho, tenha sido uma constante na minha carreira como programador ter que aprender duas vezes mais rápido. Enquanto meus colegas de profissão geralmente começaram cedo com algum interesse por computadores e interagindo com programação em algum nível na infância e adolescência eu só li um código-fonte por volta dos 26.
 
 Embora a minha parte técnica tenha ficado defasada em relação a alguns aspectos eu tinha uma experiência normal de quem trabalha; e programar é um trabalho como outro qualquer. Vou tentar descrever a seguir quais passos eu gostaria de ter seguido na adolescência e que será a carta que deixarei pra mim quando tiver a oportunidade de voltar aos anos 90.
 
