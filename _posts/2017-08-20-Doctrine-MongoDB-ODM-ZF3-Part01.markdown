@@ -10,7 +10,7 @@ author: "Jociel Souza"
 
 O Doctrine MongoDB ODM (Object Document Mapper), é um framework de mapeamento documento-objeto que fornece uma melhor forma de manipular, persistir objetos do PHP no MogoDB
 
-Antes de começar irremos assumir as seguintes premissas (entre parenteses está a versão que estou utilizando):
+Antes de começar iremos assumir as seguintes premissas (entre parenteses está a versão que estou utilizando):
 
 Que já tenha instalado em sua maquina  
 Composer(1.4.2)  
