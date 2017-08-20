@@ -10,7 +10,7 @@ Não é de hoje que gasto umas boas horas do meu dia pensando em como ser um des
 
 Embora a minha parte técnica tenha ficado defasada em relação a alguns aspectos eu tinha uma experiência normal de quem trabalha; e programar é um trabalho como outro qualquer. Vou tentar descrever a seguir quais passos eu gostaria de ter seguido na adolescência e que será a carta que deixarei pra mim quando tiver a oportunidade de voltar aos anos 90.
 
-- Mostre seu rosto: sua carreira como desenvolvedor começa no primeiro fórum que você entrar, na primeira pergunta que fizer, no primeiro blog que criar, então crie sua identidade e torne-se conhecido porque é o network que vai alavancar sua carreira e não a sua capacidade de escrever códigos (#root e emojis em seus nicks devem bonitos para a turminha de vocês, no mundo real isso é uma desvantagem);
+- Mostre seu rosto: sua carreira como desenvolvedor começa no primeiro fórum que você entrar, na primeira pergunta que fizer, no primeiro blog que criar, então crie sua identidade e torne-se conhecido porque é o network que vai alavancar sua carreira e não a sua capacidade de escrever códigos (#root e emojis em seus nicks deve ser bonito para a turminha de vocês, no mundo real isso é uma desvantagem);
 
 - Crie credibilidade: sua identidade nas empresas, freelas, comunidades, sobrinhagens, é seu cartão de visitas e se você perde sua credibilidade em qualquer um desses segmentos é como um castelo de cartas recebendo um sopro, tudo desmorona e você vai precisar reconstruir tudo;
 
