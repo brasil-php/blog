@@ -78,8 +78,8 @@ Por enquanto temos o necessário instalado.
 **Configuração**
 
 Agora precisamos criar o nosso arquivo de configuração local do DoctrineODM com os dados da conexão e outros,  
-mas para nossa felicidade o doctrine já traz um arquivo pré pronto(rsrs), vamos copiar para o diretório de configuração
-do projeto do zend e renomea-lo, assumindo que estamos na raiz do projeto execute o seguinte comando:
+mas para nossa felicidade o doctrine já traz um arquivo pré pronto(rsrs), vamos copiá-lo para o diretório de configuração
+do projeto do zend e renomeá-lo, assumindo que estamos na raiz do projeto execute o seguinte comando:
 
 ```
 cp vendor/doctrine/doctrine-mongo-odm-module/config/module.doctrine-mongo-odm.local.php.dist config/autoload/doctrine-mongo-odm.local.php
@@ -89,6 +89,7 @@ Nesse arquivo, da linha `7` até a linha `17`, temos a sessão de configuração
 coloquei a seguinte configuração:
 
 ```php
+<?php
 'connection' => array(
     'odm_default' => array(
         'server'           => 'localhost',
@@ -115,7 +116,8 @@ Agora vamos configurar onde o DoctrineODM ira encontrar nossas classes que repre
 abra o arquivo `module\Application\config\module.config.php`, abaixo da sessão `controllers` adicione o seguinte trecho
 de código:
 
-```
+```php
+<?php
 'doctrine' => [
     'driver' => [
         __NAMESPACE__ . '_driver' => [
@@ -141,16 +143,15 @@ A configuração esta pronta.
 
 **Primeiro uso**
 
-Para mapear as classes utilizamos "Notations" para definirmos as propriedades, tipos, etc. Sem mais conversa vamos aos código.  
+Para mapear as classes utilizamos "Notations" para definirmos as propriedades, tipos, etc. Sem mais conversa vamos aos códigos.  
 Vamos criar dentro do dirétorio "Documents" uma classe de nome User, no arquivo iremos importar o namespace "Annotations" do Doctrine
-
 ```
 use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 ```
 
 Logo acima do nome da classe iremos dizer que ela é um documento da collection User atravéz de notations, ficando assim:
-
 ```php
+<?php
 /** @ODM\Document(collection="User") */
 class User
 {
@@ -160,7 +161,6 @@ class User
 
 Vamos definir alguns atributos para essa classe, "nome", "email", "idade", e vamos mapear esses atributos para o DoctrineODM,  
 a classe final ficando dessa forma:
-
 ```php
 <?php
 
@@ -226,8 +226,7 @@ class User
 ```
 Na linha `10` estamos dizendo que o atributo "id" é o identificador do documento, nas linhas `13` e `16` estamos dizendo que os atributos `nome` e `email` são fields do tipo string, e na linha `19` o atributo `idade` é um field do tipo inteiro.
 
-Agora precisamos criar a collection, o Doctrine traz alguns commando que facilitam a nossa vida, então para criar essa collection basta executar esse commando
-
+Agora precisamos criar a collection, o Doctrine traz alguns commandos que facilitam a nossa vida, por enquanto vamor ver apenas o de criação, então para criar essa collection basta executar esse comando.
 ```
 php vendor/doctrine/doctrine-module/bin/doctrine-module odm:schema:create
 ```
@@ -237,6 +236,7 @@ Se tudo estiver correto, agora temos uma collection chamada "User" na base de da
 No arquivo `module/Application/config/module.config.php`, na linha `40` até `46` deixe esse trecho de código como este:
 
 ```php
+<?php
 'controllers' => [
     'factories' => [
         Controller\IndexController::class => function ($sm){
@@ -249,6 +249,7 @@ Nós temos um controller existente no diretório `Application/src/Cntroller`, pa
 vamos acrecentar o seguinte código acima do método indexAction:
 
 ```php
+<?php
 private $sm;
   
 function __construct($sm)
@@ -263,6 +264,7 @@ function __construct($sm)
 Vamos acrescentar o o seguinte código na `indexAction` existente nesse controller:
 
 ```php
+<?php
 $documentManager = $this->sm->get('doctrine.documentmanager.odm_default');
 
 $newUser = new User();
@@ -278,6 +280,7 @@ $documentManager->flush();
 Ficando desta forma
 
 ```php
+<?php
 public function indexAction()
 {
     $documentManager = $this->sm->get('doctrine.documentmanager.odm_default');
@@ -298,11 +301,13 @@ public function indexAction()
 
 Na linha `25` estamos recuperando o DocumentManager do DoctrineODM, responsável pelas transações do banco;
 ```php
+<?php
 $documentManager = $this->sm->get('doctrine.documentmanager.odm_default');
 ```
 
 Da linha `27` até a `31` estamos instanciando e setando os atributos de um usuário;
 ```php
+<?php
 $newUser = new User();
   
 $newUser->setNome("Jociel Souza");
@@ -312,6 +317,7 @@ $newUser->setIdade(25);
 
 Na linha `33` e `34` estamos persistindo e commitando a mudança para o banco de dados
 ```php
+<?php
 $documentManager->persist($newUser);
 $documentManager->flush();
 ```
@@ -322,6 +328,7 @@ Vamos copiar o `id` desse documento.
 
 Agora vamos comentar esse código da linha `27` até a `34` e acrescentar o seguinte:
 ```php
+<?php
 $user = $documentManager->find(User::class, "5999fb484d1d3443c01cd4f1");
   
 var_dump($user);
@@ -329,6 +336,7 @@ exit;
 ```
 Ficando desta forma
 ```php
+<?php
 public function indexAction()
 {
     $documentManager = $this->sm->get('doctrine.documentmanager.odm_default');
@@ -354,6 +362,7 @@ public function indexAction()
 
 Na linha `37` estamos recuperando um documento do tipo `User` com o ID que passamos
 ```php
+<?php
 $user = $documentManager->find(User::class, "5999fb484d1d3443c01cd4f1");
 ```
 
