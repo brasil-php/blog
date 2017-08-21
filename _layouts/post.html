@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<header class="intro-header" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1 style="text-shadow: 2px 1px 0px rgb(30, 30, 30);">{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    	<h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				{{ content }}
+                  <hr>
+
+                  <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a></small></p>
+
+
+                  <ul class="pager">
+                    {% if page.previous.url %}
+                      <li class="previous">
+                            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Anterior</a>
+                      </li>
+                    {% endif %}
+
+                    {% if page.next.url %}
+                      <li class="next">
+                          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Próximo &rarr;</a>
+                      </li>
+                    {% endif %}
+                </ul>
+
+                <hr>
+                {% if page.comments %}
+                    <div id="disqus_thread"></div>
+                        <script>
+                            (function() { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = '//cakephpbrasil.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                {% endif %}
+
+            </div><!-- ./col-8 -->
+        </div><!-- ./row -->
+    </div><!-- ./container -->
+
+</article>
+
+
