@@ -27,38 +27,38 @@ layout: default
             </div>
         </div>
     </div>
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				{{ content }}
-                  <hr>
+    <div class="section section-about-us">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            {{ content }}
+                              <hr>
+            
+                              <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a></small></p>
+            
+            
+                              <ul class="pager">
+                                {% if page.previous.url %}
+                                  <li class="previous">
+                                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Anterior</a>
+                                  </li>
+                                {% endif %}
+            
+                                {% if page.next.url %}
+                                  <li class="next">
+                                      <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Próximo &rarr;</a>
+                                  </li>
+                                {% endif %}
+                            </ul>
+            
+                            <hr>
+            
+                    {% include disqus_comments.html %}
+                        
+                        </div><!-- ./col-8 -->
+                    </div><!-- ./row -->
+                </div><!-- ./container -->
+        </div>
 
-                  <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a></small></p>
-
-
-                  <ul class="pager">
-                    {% if page.previous.url %}
-                      <li class="previous">
-                            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Anterior</a>
-                      </li>
-                    {% endif %}
-
-                    {% if page.next.url %}
-                      <li class="next">
-                          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Próximo &rarr;</a>
-                      </li>
-                    {% endif %}
-                </ul>
-
-                <hr>
-
-		{% include disqus_comments.html %}
-		    
-            </div><!-- ./col-8 -->
-        </div><!-- ./row -->
-    </div><!-- ./container -->
-
-</article>
 
 
