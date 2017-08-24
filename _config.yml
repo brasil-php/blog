@@ -5,6 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Com base nisso decidimos criar um blog com materiais que são comentados e discutidos por lá ;)
 baseurl: "/blog"
 url: "https://rafagouveia.github.io/blog"
+logo: "/blog/assets/img/logo-php-brasill-1.png"
 header-img: blog/assets/img/elephant.jpg
 github_username:  rafagouveia
 highlighter: rouge
