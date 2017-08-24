@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="page-header page-header-small"><br /> <br/>
+<div class="page-header page-header-small">
         <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
         </div>
-        <div class="container">
+        <div class="container"><br /> <br />
             <div class="content-center">
                 <h1 class="title">{{ page.title }}</h1>
                 {% if page.subtitle %}
@@ -25,8 +25,32 @@ layout: default
                 </div>
                     </div>
                 </div>
+                
+                <hr>
+                
+                                  <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a></small></p>
+                
+                
+                                  <ul class="pager">
+                                    {% if page.previous.url %}
+                                      <li class="previous">
+                                            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Anterior</a>
+                                      </li>
+                                    {% endif %}
+                
+                                    {% if page.next.url %}
+                                      <li class="next">
+                                          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Próximo &rarr;</a>
+                                      </li>
+                                    {% endif %}
+                                </ul>
+                
+                                <hr>
+                                
                 <div class="separator separator-primary"></div>
                 
+                
+                {% include disqus_comments.html %}
             </div>
         </div>
     <!-- <div class="section section-about-us">
@@ -34,26 +58,7 @@ layout: default
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                             {{ content }}
-                              <hr>
-            
-                              <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a></small></p>
-            
-            
-                              <ul class="pager">
-                                {% if page.previous.url %}
-                                  <li class="previous">
-                                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Anterior</a>
-                                  </li>
-                                {% endif %}
-            
-                                {% if page.next.url %}
-                                  <li class="next">
-                                      <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Próximo &rarr;</a>
-                                  </li>
-                                {% endif %}
-                            </ul>
-            
-                            <hr>
+                              
             
                     {% include disqus_comments.html %}
                         
