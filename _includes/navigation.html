@@ -23,40 +23,23 @@
                 {% if page.url != '/404.html' %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}" target="_blank"
-                        data-toggle="tooltip" data-placement="bottom" title="Entre em contato com a gente!">
+                        data-toggle="tooltip" data-placement="bottom" title="{{page.description}}">
                         <i class="material-icons"></i> {{ page.title }}</a>
                 </li>
                 {% endif %}
         {% endif %}{% endfor %}
                     
+               
                 <li>
-                    <a href="#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Confira nossa loja!">
-                        <i class="material-icons">store</i> LOJA</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/rafaggouveia" target="_blank" class="btn btn-simple btn-white btn-just-icon"
-                                    data-toggle="tooltip" data-placement="bottom" title="Twitter">
-                        <i class="fa fa-twitter"></i>
+                    <a href="https://github.com/brasil-php" target="_blank" class="btn btn-simple btn-white btn-just-icon" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+                        <i class="fa fa-github-square"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/rafagouve" target="_blank" class="btn btn-simple btn-white btn-just-icon"
-                                    data-toggle="tooltip" data-placement="bottom" title="Facebook">
-                        <i class="fa fa-facebook-square"></i>
+                    <a href="https://telegram.me/phpbrasil" target="_blank" class="btn btn-simple btn-white btn-just-icon" data-toggle="tooltip" data-placement="bottom" title="Telegram"><i class="fa fa-telegram"></i>
                     </a>
                 </li>
-                                <li>
-                    <a href="https://telegram.me/RaitoYa" target="_blank" class="btn btn-simple btn-white btn-just-icon"
-                                    data-toggle="tooltip" data-placement="bottom" title="Telegram">
-                                        <i class="fa fa-telegram"></i>
-                                    </a>
-                    </li>
-                                <li>
-                    <a href="https://www.instagram.com/rafa.gouveia/" target="_blank" class="btn btn-simple btn-white btn-just-icon"
-                                    data-toggle="tooltip" data-placement="bottom" title="Instagram">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                    </li>
+                   
             </ul>
         </div>
     </div>
