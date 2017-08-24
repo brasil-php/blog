@@ -21,4 +21,5 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-paginate
-
+gems:
+  - liquid-md5
