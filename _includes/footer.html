@@ -1,11 +1,14 @@
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        {% if site.github_username %}
+<footer class="footer footer-default">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <span class="small text-muted">
+                    Somos uma comunidade de desenvolvedores apaixonados pelo PHP.
+                </span>
+            </div>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <{% if site.github_username %}
                             <a href="https://github.com/{{ site.github_username }}" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -14,7 +17,8 @@
                                 <small>Gitgub PHPBrasil</small>
                             </a>
                         {% endif %}
-                            <br>
+                        </li>
+                        <li>
                             <a href="https://telegram.me/phpbrasil" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -22,25 +26,25 @@
                                 </span>
                                 <small>Grupo no Telegram</small>
                             </a>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <span class="small text-muted">
-                            Somos uma comunidade de desenvolvedores apaixonados pelo PHP.
-                        </span>
-                    </div>
-                </div>
-
-                <hr>
-
-                <p class="copyright text-muted">
+                        </li>
+                        <li>
+                            <a href="http://blog.creative-tim.com">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
+                                MIT License
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    ©
                     Comunidade PHP Brasil &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}
-                </p>
-
-            </div><!---col-8 -->
-        </div><!--./row -->
-    </div><!--container -->
-</footer>
+                </div>
+            </div>
+        </footer>
 
     <script src="/blog/assets/js/jquery.min.js" type="text/javascript"></script>
     <script src="/blog/assets/js/core/tether.min.js" type="text/javascript"></script>
