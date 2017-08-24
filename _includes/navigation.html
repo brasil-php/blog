@@ -23,7 +23,7 @@
                 {% if page.url != '/404.html' %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}" target="_blank"
-                        data-toggle="tooltip" data-placement="bottom" title="{{page.description}}">
+                        data-toggle="tooltip" data-placement="bottom" title="{{ page.description }}">
                         <i class="material-icons"></i> {{ page.title }}</a>
                 </li>
                 {% endif %}
@@ -32,7 +32,7 @@
                
                 <li>
                     <a href="https://github.com/brasil-php" target="_blank" class="btn btn-simple btn-white btn-just-icon" data-toggle="tooltip" data-placement="bottom" title="GitHub">
-                        <i class="fa fa-github-square"></i>
+                        <i class="fa fa-github"></i>
                     </a>
                 </li>
                 <li>
