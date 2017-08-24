@@ -2,22 +2,31 @@
 layout: default
 ---
 
-<header class="intro-header" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1 style="text-shadow: 2px 1px 0px rgb(30, 30, 30);">{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    	<h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+<div class="page-header page-header-small">
+        <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
+        </div>
+        <div class="container">
+            <div class="content-center">
+                <h1 class="title">{{ page.title }}</h1>
+                {% if page.subtitle %}
+                <h2 class="subheading">{{ page.subtitle }}</h2>
+            {% endif %}
+            <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+        
+                <div class="text-center">
+                    <a href="#pablo" class="btn btn-primary btn-icon  btn-icon-mini">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#pablo" class="btn btn-primary btn-icon  btn-icon-mini">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-</header>
-
 <article>
     <div class="container">
         <div class="row">
