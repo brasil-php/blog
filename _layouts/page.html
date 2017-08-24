@@ -2,14 +2,16 @@
 layout: default
 ---
 
-
-<div class="page-header page-header-small">
+<div class="page-header clear-filter" style="height: 69vh;" filter-color="blue">
     <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
     </div>
     <div class="container">
-        <div class="content-center">
-            <h1 class="title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-            <h4>{{ page.description }}</h4>
+        <div class="content-center brand">
+            <img class="n-logo" src="{{ page.logo }}" alt="">
+            <h1 class="h1-seo">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+            
+            <h3>{{ page.description }}</h3>
+            
             <div class="text-center">
                 <a href="#pablo" class="btn btn-primary btn-icon  btn-icon-mini">
                     <i class="fa fa-facebook-square"></i>
@@ -22,8 +24,10 @@ layout: default
                 </a>
             </div>
         </div>
+        
     </div>
 </div>
+
 <div class="section section-about-us">
     <div class="container">
         <div class="row">
