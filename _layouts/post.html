@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="page-header page-header-small">
+<div class="page-header page-header-small"><br /> <br/>
         <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
         </div>
         <div class="container">
@@ -13,17 +13,6 @@ layout: default
             {% endif %}
             <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
         
-                <div class="text-center">
-                    <a href="#pablo" class="btn btn-primary btn-icon  btn-icon-mini">
-                        <i class="fa fa-facebook-square"></i>
-                    </a>
-                    <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#pablo" class="btn btn-primary btn-icon  btn-icon-mini">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </div>
