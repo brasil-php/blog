@@ -2,6 +2,23 @@
 layout: default
 ---
 
+<div class="header header-filter" style="background-image: url('{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="title">Write the best title for your page.</h1>
+                <h4>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h4>
+                <br />
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
+                    <i class="fa fa-play"></i> Visitar Canal
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <header class="intro-header" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
