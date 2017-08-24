@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/pathawks/liquid-md5.git
+  revision: 9e8ca617b9fb4cf49671238cf0c28696d8da3817
+  specs:
+    liquid-md5 (0.0.3)
+      liquid (>= 2.5, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,6 +67,7 @@ DEPENDENCIES
   jekyll (= 3.5.1)
   jekyll-feed (~> 0.6)
   jekyll-paginate
+  liquid-md5!
   minima (~> 2.0)
   tzinfo-data
 
@@ -67,4 +75,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
