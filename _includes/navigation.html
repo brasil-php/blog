@@ -1,29 +1,63 @@
-
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll navbar-info">
     <div class="container">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+            <a class="navbar-brand" href="{{ site.url }}"
+                    data-toggle="tooltip" data-placement="bottom" title="{{ site.title }}">{{ site.title }}</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navigation-example">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{ site.url }}">Home</a>
+                    <a href="{{ site.url }}" target="_blank"
+                        data-toggle="tooltip" data-placement="bottom" title="Conheça nossos trabalhos!">
+                        <i class="material-icons">home</i> INICIO</a>
                 </li>
                 {% for page in site.pages %}{% if page.title %}
-        				{% if page.url != '/404.html' %}
-                        <li>
-                            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                        </li>
-        				{% endif %}
-                {% endif %}{% endfor %}
+                {% if page.url != '/404.html' %}
+                <li>
+                    <a href="{{ page.url | prepend: site.baseurl }}" target="_blank"
+                        data-toggle="tooltip" data-placement="bottom" title="Entre em contato com a gente!">
+                        <i class="material-icons"></i> {{ page.title }}</a>
+                </li>
+                {% endif %}
+        {% endif %}{% endfor %}
+                    
+                <li>
+                    <a href="#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Confira nossa loja!">
+                        <i class="material-icons">store</i> LOJA</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/rafaggouveia" target="_blank" class="btn btn-simple btn-white btn-just-icon"
+                                    data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/rafagouve" target="_blank" class="btn btn-simple btn-white btn-just-icon"
+                                    data-toggle="tooltip" data-placement="bottom" title="Facebook">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+                                <li>
+                    <a href="https://telegram.me/RaitoYa" target="_blank" class="btn btn-simple btn-white btn-just-icon"
+                                    data-toggle="tooltip" data-placement="bottom" title="Telegram">
+                                        <i class="fa fa-telegram"></i>
+                                    </a>
+                    </li>
+                                <li>
+                    <a href="https://www.instagram.com/rafa.gouveia/" target="_blank" class="btn btn-simple btn-white btn-just-icon"
+                                    data-toggle="tooltip" data-placement="bottom" title="Instagram">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                    </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
+        </div>
+    </div>
 </nav>
