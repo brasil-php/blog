@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="page-header clear-filter" filter-color="blue">
+<div class="page-header clear-filter" style="height: 69vh;" filter-color="blue">
         <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
         </div>
         <div class="container">
@@ -12,32 +12,13 @@ layout: default
                 <h3>{{ page.subtitle }}</h3>
                 {% endif %}
             </div>
-            <h6 class="category category-absolute">Designed by
+            <h6 class="category category-absolute">Postado por
                 <a href="http://invisionapp.com/" target="_blank">
-                    <img src="./assets/img/invision-white-slim.png" class="invision-logo">
-                </a>. Coded by
-                <a href="https://www.creative-tim.com" target="_blank">
-                    <img src="./assets/img/creative-tim-white-slim2.png" class="creative-tim-logo">
-                </a>.</h6>
+                    {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}
+                </a>. em {{ page.date | date: "%B %-d, %Y" }}
         </div>
     </div>
-<div class="page-header page-header-small">
-        <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
-        </div>
-        <div class="container">
-            <div class="content-center">
-                    <br /> <br />
-                    <br /> <br />
-                    <br /> <br />
-                <h1 class="title">{{ page.title }}</h1>
-                {% if page.subtitle %}
-                <h2 class="subheading">{{ page.subtitle }}</h2>
-                {% endif %}
-            <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-        
-            </div>
-        </div>
-    </div>
+
     <div class="section section-about-us">
             <div class="container">
                 <div class="row">
