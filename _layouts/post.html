@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
-<div class="page-header clear-filter" filter-color="orange">
+<div class="page-header clear-filter" filter-color="blue">
         <div class="page-header-image" data-parallax="true" style="background-image: url(&quot;./assets/img/header.jpg&quot;); transform: translate3d(0px, 0px, 0px);">
         </div>
         <div class="container">
             <div class="content-center brand">
                 <img class="n-logo" src="./assets/img/now-logo.png" alt="">
-                <h1 class="h1-seo">Now UI Kit.</h1>
-                <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+                <h1 class="h1-seo">{{ page.title }}</h1>
+                {% if page.subtitle %}
+                <h3>{{ page.subtitle }}</h3>
+                {% endif %}
             </div>
             <h6 class="category category-absolute">Designed by
                 <a href="http://invisionapp.com/" target="_blank">
@@ -30,7 +32,7 @@ layout: default
                 <h1 class="title">{{ page.title }}</h1>
                 {% if page.subtitle %}
                 <h2 class="subheading">{{ page.subtitle }}</h2>
-            {% endif %}
+                {% endif %}
             <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
         
             </div>

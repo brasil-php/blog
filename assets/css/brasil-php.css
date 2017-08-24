@@ -1,0 +1,10 @@
+.page-header[filter-color="blue"] {
+    background: rgba(44, 44, 44, 0.2);
+    background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(3, 0, 220, 0.6));
+    background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(3, 0, 220, 0.6));
+    background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(3, 0, 220, 0.6));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(3, 0, 220, 0.6));
+}
+.index-page .page-header {
+    height: 69vh;
+}
