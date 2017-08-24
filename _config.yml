@@ -5,7 +5,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Com base nisso decidimos criar um blog com materiais que são comentados e discutidos por lá ;)
 baseurl: "/blog"
 url: "https://rafagouveia.github.io/blog"
-logo: "/blog/assets/img/logo-php-brasill-1.png"
 header-img: blog/assets/img/elephant.jpg
 github_username:  rafagouveia
 highlighter: rouge
@@ -14,9 +13,9 @@ paginate: 10
 comments: true
 disqus:
   shortname: https-rafagouveia-github-io-blog
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
 markdown: kramdown
 theme: jekyll-theme-minimal
 plugins:
