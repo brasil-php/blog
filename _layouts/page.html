@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div class="header header-filter" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
+<div class="header header-filter" style="background-image: url('');">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}.</h1>
+                <h1 class="title">.</h1>
                 <h4>{{ page.description }}</h4>
                 <br />
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
@@ -16,12 +16,39 @@ layout: default
         </div>
     </div>
 </div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			{{ content }}
-		</div>
-	</div>
+<div class="page-header page-header-small">
+    <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
+    </div>
+    <div class="container">
+        <div class="content-center">
+            <h1 class="title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+            <h4>{{ page.description }}</h4>
+            <div class="text-center">
+                <a href="#pablo" class="btn btn-primary btn-icon  btn-icon-mini">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#pablo" class="btn btn-primary btn-icon  btn-icon-mini">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="title">Who we are?</h2>
+                <h5 class="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.</h5>
+            </div>
+        </div>
+        <div class="separator separator-primary"></div>
+        <div class="section-story-overview">
+            {{ content }}
+        </div>
+    </div>
 </div>
 
