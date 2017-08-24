@@ -13,9 +13,9 @@ paginate: 10
 comments: true
 disqus:
   shortname: https-rafagouveia-github-io-blog
-exclude:
-  - Gemfile
-  - Gemfile.lock
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
 markdown: kramdown
 theme: jekyll-theme-minimal
 plugins:
