@@ -8,7 +8,7 @@ layout: default
     <div class="container">
         <div class="content-center brand">
             <img class="n-logo" src="{{ site.logo }}" alt="">
-            <h1 class="h1-seo">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+            <h1 class="h1-seo">{% if page.title %}{{ page.title }}{% else %}{{ site.title | downcase | md5 }}{% endif %}</h1>
             
             <h3>{{ page.description }}</h3>
             
