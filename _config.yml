@@ -18,7 +18,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 markdown: kramdown
-theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-paginate
