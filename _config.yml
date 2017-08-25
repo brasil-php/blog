@@ -4,12 +4,13 @@ description: > # this means to ignore newlines until "baseurl:"
   Se você conhece o Grupo de Telegram sabe que lá é correria!
   Com base nisso decidimos criar um blog com materiais que são comentados e discutidos por lá ;)
 baseurl: "/blog"
-url: "https://brasil-php.github.io/blog"
-header-img: blog/assets/img/home-bg.jpg
+url: "https://brasil-php.github.io"
+header-img: blog/assets/img/elephant.jpg
 github_username:  brasil-php
 highlighter: rouge
 permalink: pretty
 paginate: 10
+comments: true
 disqus:
   shortname: https-brasil-php-github-io-blog
 exclude:
