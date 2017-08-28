@@ -17,7 +17,7 @@ header-img: "blog/assets/img/ste-elephant.jpg"
     
   
     <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-    <p>{% assign m = page.date | date: "%-m" %}
+    <p> data: {% assign m = page.date | date: "%-m" %}
 {{ page.date | date: "%-d" }}
 {% case m %}
   {% when '1' %}Janeiro
