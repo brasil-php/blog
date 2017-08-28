@@ -31,7 +31,7 @@ header-img: "blog/assets/img/ste-elephant.jpg"
   {% when '12' %}Dezembro
 {% endcase %}
 
-    <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} em {{ page.date | date: "%Y" }}</p>
+    <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
 <hr>
 {% endfor %}
