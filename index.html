@@ -14,7 +14,10 @@ header-img: "blog/assets/img/ste-elephant.jpg"
         </h3>
         {% endif %}
     </a>
-    {% assign m = page.date | date: "%-m" %}
+    
+  
+    <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    <p>{% assign m = page.date | date: "%-m" %}
 {{ page.date | date: "%-d" }}
 {% case m %}
   {% when '1' %}Janeiro
@@ -30,8 +33,7 @@ header-img: "blog/assets/img/ste-elephant.jpg"
   {% when '11' %}Novembro
   {% when '12' %}Dezembro
 {% endcase %}
-
-    <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+{{ page.date | date: "%Y" }}</p>
 </div>
 <hr>
 {% endfor %}
