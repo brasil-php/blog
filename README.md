@@ -39,6 +39,7 @@ author:
 gravatar: true # Retire ou deixe em false para desativar o gravatar no seu post!
 
 ---
+Obs: Se não usar gravatar, remova a variavel ou deixe null.
 
 ## Exemplo de Titulo do Post
 
