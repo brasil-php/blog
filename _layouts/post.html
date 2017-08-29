@@ -72,14 +72,28 @@ layout: default
                   </div>
                   <div class="col-md-10">
                         <div class="button-container">
-                                <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a>
-                                <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="" data-original-title="Follow me on Twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="" data-original-title="Follow me on Instagram">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </div>
+                            {% if page.twitter %}
+                            <a href="{{ page.twitter }}" class="btn btn-info btn-round btn-lg btn-icon" style="
+                            background-color: #1da1f2;
+                        " rel="tooltip" title="" data-original-title="Follow me on Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            {% endif %}
+                            {% if page.facebook %}
+                            <a href="{{ page.facebook }}" class="btn btn-info btn-round btn-lg btn-icon" style="
+                            background-color: #3b5998;
+                        " rel="tooltip" title="" data-original-title="Follow me on Twitter">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            {% endif %}
+                            {% if page.telegram %}
+                            <a href="{{ page.telegram }}" class="btn btn-info btn-round btn-lg btn-icon" style="
+                            background-color: #0088cc;
+                        " rel="tooltip" title="" data-original-title="Follow me on Twitter">
+                                <i class="fa fa-telegram"></i>
+                            </a>
+                            {% endif %}
+                        </div>
                   </div>
                 </div>
               </div>
