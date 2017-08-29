@@ -3,7 +3,8 @@ layout: post
 title:  "Qual melhor framework PHP do mundo!"
 date:   2017-08-16 21:43:19 -0300
 categories: reflexao
-author: "Erik Figueiredo"
+author: 
+    name: "Erik Figueiredo"
 ---
 ​
 Não é novidade que o PHP já tem frameworks que se consolidaram no mercado e conquistaram uma legião de adeptos e, porque não, fans.
