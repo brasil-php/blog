@@ -3,8 +3,12 @@ layout: post
 title: "Como os padrões de projeto nos ajudam a melhorar? Strategy"
 date: 2017-08-16 12:43:19 -0300
 categories: dica
+author_url: "https://medium.com/@principe.borodin"
+description: "Apaixonado por tecnologia e artes, seu vocabulário desconhece a palavra 'limites', atua em todas as áreas tecnologias, música, desenho e pintura, e literatura."
 author:
     name: "Igor C. de Paula"
+    email: "principe.borodin@gmail.com"
+gravatar: true
 ---
 # Como os padrões de projeto nos ajudam a melhorar? Strategy
 
