@@ -20,16 +20,24 @@ Além de persistir as threads também acreditamos que seja possível registrar a
 ## Novo guia para postagens
 
 O sistema conta com um novo guia para postagens com integração ao Gravatar
+obs: A sintax deve está extamente igual a baixo(Campos obrigatorios)
 
 ```
 ---
-layout: post
-title:  "Qual melhor framework PHP do mundo!"
-date:   2017-08-16 21:43:19 -0300
-categories: reflexao
+layout: post #obrigatorio
+title:  "Qual melhor framework PHP do mundo!" #obrigatorio
+date:   2017-08-16 21:43:19 -0300 #obrigatorio
+categories: reflexao #obrigatorio
 author: 
-    name: "Erik Figueiredo"
+    name: "Seu Nome" #Obrigatorio
+    email: "seuEmail@exemplo.com" #Sete seu e-mail do Gravatar ou retire essa opção!
+gravatar: true # Retire ou deixe em false para desativar o gravatar no seu post!
+
 ---
+
+## Exemplo de Titulo do Post
+
+O seu conteudo deve está abaixo do post recomenda se usar ## para o titulo!
 ```
 ----
 
