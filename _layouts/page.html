@@ -2,25 +2,26 @@
 layout: default
 ---
 
-<header class="intro-header" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<div class="page-header clear-filter" style="height: 69vh;" filter-color="blue">
+    <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
+    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <hr class="small">
-                    <span class="subheading">{{ page.description }}</span>
-                </div>
-            </div>
+        <div class="content-center brand">
+            <img class="n-logo" src="{{ site.logo }}" height="111px" alt="">
+            <p>
+                <h4>{{ page.description }}</h4>
+                <div class="separator separator-primary"></div>
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="section section-about-us">
+    <div class="container">
+        <div class="section-story-overview">
+            {{ content }}
         </div>
     </div>
-</header>
-
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			{{ content }}
-		</div>
-	</div>
 </div>
-<hr>
+

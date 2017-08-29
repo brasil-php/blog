@@ -1,0 +1,58 @@
+.page-header[filter-color="blue"] {
+    background: rgba(44, 44, 44, 0.2);
+    background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(3, 0, 220, 0.6));
+    background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(3, 0, 220, 0.6));
+    background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(3, 0, 220, 0.6));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(3, 0, 220, 0.6));
+}
+.index-page .page-header {
+    height: 45vh;
+}
+.profile-img{
+  margin-right: 10px;
+}
+.index-page .page-header .category-absolute {
+    position: initial;
+    top: 0;
+    margin-top: 0;
+    padding: 0 15px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 1px black;;
+}
+.category-absolute {
+    position: initial;
+    top: 0;
+    margin-top: 0;
+    padding: 0 15px;
+    width: 100%;
+    text-shadow: 0px 1px 1px black;
+}
+h1, .h1 {
+    font-size: 2.5em;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+.index-page .page-header .container > .content-center {
+    top: 61%;
+}
+.page-header .container > .content-center {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 880px;
+}
+.content.pager {
+    padding-top: 33px;
+    text-align: -webkit-center;
+    text-align: center;
+}
+.profile .row .col-xs-3{
+        padding-left: 15px;
+}

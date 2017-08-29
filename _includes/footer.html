@@ -1,47 +1,69 @@
+<footer class="footer footer-default">
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        {% if site.github_username %}
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            {% if site.github_username %}
                             <a href="https://github.com/{{ site.github_username }}" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                                 </span>
+
                                 <small>Github PHPBrasil</small>
                             </a>
                         {% endif %}
-                            <br>
-                            <a href="https://telegram.me/phpbrasil" target="_blank">
+                        </li>
+                        <li>
+                            <a href="{{ site.telegram }}" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
                                 </span>
                                 <small>Grupo no Telegram</small>
                             </a>
-                    </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    © {{ site.title }} &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}
 
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <span class="small text-muted">
-                            Somos uma comunidade de desenvolvedores apaixonados pelo PHP.
-                        </span>
-                    </div>
                 </div>
+            </div>
+        </footer>
 
-                <hr>
+    <script src="/blog/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/blog/assets/js/core/tether.min.js" type="text/javascript"></script>
+	<script src="/blog/assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-                <p class="copyright text-muted">
-                    Comunidade PHP Brasil &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}
-                </p>
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="/blog/assets/js/nouislider.min.js" type="text/javascript"></script>
 
-            </div><!---col-8 -->
-        </div><!--./row -->
-    </div><!--container -->
-</footer>
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="/blog/assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
 
-<script src="/blog/assets/js/jquery.min.js"></script>
-<script src="/blog/assets/js/bootstrap.min.js"></script>
-<script src="/blog/assets/js/clean-blog.js"></script>
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+    <script src="/blog/assets/js/now-ui-kit.js" type="text/javascript"></script>
+    <script src="/blog/assets/js/md5.js" type="text/javascript"></script>
+    {% if page.gravatar %}
+    <script type="text/javascript">
+   $(document).ready(function(){
+     var gravatar = "https://www.gravatar.com/";
+     var avatar = "avatar/";
+     var hash = md5("{{ page.author.email | downcase }}");
+
+     $(".profile-img").attr('src', gravatar + avatar + hash + "?d=mm");
+     $.ajax({
+       url: gravatar + hash + ".json",
+       type: "post",
+       crossDomain: true,
+       dataType: 'jsonp',
+       success: function(data){
+         console.log(data.entry[0].aboutMe);
+         $(".gravatar-description").html(data.entry[0].aboutMe);
+       }
+     });
+   });
+    </script>
+    {% endif %}
