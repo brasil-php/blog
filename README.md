@@ -17,6 +17,35 @@ Como nem tudo são flores o chat não é uma boa base de conhecimentos. Não fic
 
 Além de persistir as threads também acreditamos que seja possível registrar a relevância de um tema para a comunidade. Sendo assim quem identificar essa demanda poderá criar uma issue para que alguém que conheça algo sobre o assunto crie uma `post` para toda a comunidade usufruir desse conhecimento
 
+## Atualização 2.0
+### Novo guia para postagens
+
+O sistema conta com um novo guia para postagens com integração ao Gravatar, redes sociais e uma area sobre o postador.
+obs: A sintax deve está extamente igual a baixo(Campos obrigatorios)
+
+```
+---
+layout: post # Obrigatorio
+title:  "Qual melhor framework PHP do mundo!" # Obrigatorio
+date:   2017-08-16 21:43:19 -0300             # Obrigatorio
+categories: reflexao        # Obrigatorio [SUPORTE A MUTIPLAS CATEGORIAS SEPARADOS POR HÍFEN]
+author_url: UrlMedium       # Opcional
+twitter: urlTwitter         # Opcional
+facebook: urlFacebook       # Opcional
+telegram: urlTelegram       # Opcional
+description: "Sobre Você"   # Opcional
+author: 
+    name: "Seu Nome" # Obrigatorio
+    email: "seuEmail@exemplo.com" #Obrigatorio para o Gravatar!
+gravatar: true # Retire ou deixe em false para desativar o gravatar no seu post!
+
+---
+Obs: Se não usar gravatar, remova a variavel ou deixe null.
+
+## Exemplo de Titulo do Post
+
+O seu conteudo deve está abaixo do post recomenda se usar ## para o titulo!
+```
 ----
 
 Vida longa ao PHP
