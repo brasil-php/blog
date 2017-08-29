@@ -14,35 +14,13 @@ header-img: "blog/assets/img/ste-elephant.jpg"
         </h3>
         {% endif %}
     </a>
-<<<<<<< HEAD
     {% assign months = "Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro" | split: "|" %}
     {% assign m = post.date | date: "%-m" | minus: 1 %}
     {% assign day = post.date | date: "%d" %}
     {% assign month = months[m] %}
     {% assign year = post.date | date: "%Y" %}
     <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} em {{ day }} de {{ month }} de {{ year }}</p>
-=======
-    
-  
-    <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-    <p> data: {% assign m = page.date | date: "%-m" %}
-{{ page.date | date: "%-d" }}
-{% case m %}
-  {% when '1' %}Janeiro
-  {% when '2' %}Fevereiro
-  {% when '3' %}Março
-  {% when '4' %}Abril
-  {% when '5' %}Maio
-  {% when '6' %}Junho
-  {% when '7' %}Julho
-  {% when '8' %}Agosto
-  {% when '9' %}Setembro
-  {% when '10' %}Outubro
-  {% when '11' %}Novembro
-  {% when '12' %}Dezembro
-{% endcase %}
-{{ page.date | date: "%Y" }}</p>
->>>>>>> 196291a4e117598d5387aadfd374dbeb5d25d4c3
+
 </div>
 <hr>
 {% endfor %}
