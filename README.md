@@ -19,18 +19,21 @@ Além de persistir as threads também acreditamos que seja possível registrar a
 
 ## Novo guia para postagens
 
-O sistema conta com um novo guia para postagens com integração ao Gravatar
+O sistema conta com um novo guia para postagens com integração ao Gravatar, redes sociais e uma area sobre o postador.
 obs: A sintax deve está extamente igual a baixo(Campos obrigatorios)
 
 ```
 ---
-layout: post #obrigatorio
-title:  "Qual melhor framework PHP do mundo!" #obrigatorio
-date:   2017-08-16 21:43:19 -0300 #obrigatorio
-categories: reflexao #obrigatorio
+layout: post # Obrigatorio
+title:  "Qual melhor framework PHP do mundo!" # Obrigatorio
+date:   2017-08-16 21:43:19 -0300 # Obrigatorio
+categories: reflexao # Obrigatorio
+twitter: urlTwitter # Opcional
+facebook: urlFacebook # Opcional
+telegram: urlTelegram # Opcional
 author: 
-    name: "Seu Nome" #Obrigatorio
-    email: "seuEmail@exemplo.com" #Sete seu e-mail do Gravatar ou retire essa opção!
+    name: "Seu Nome" # Obrigatorio
+    email: "seuEmail@exemplo.com" #Obrigatorio para o Gravatar!
 gravatar: true # Retire ou deixe em false para desativar o gravatar no seu post!
 
 ---
