@@ -27,12 +27,13 @@ obs: A sintax deve está extamente igual a baixo(Campos obrigatorios)
 ---
 layout: post # Obrigatorio
 title:  "Qual melhor framework PHP do mundo!" # Obrigatorio
-date:   2017-08-16 21:43:19 -0300 # Obrigatorio
-categories: reflexao    # Obrigatorio [SUPORTE A MUTIPLAS CATEGORIAS SEPARADOS POR HÍFEN]
-author_url: UrlMedium   # Opcional
-twitter: urlTwitter     # Opcional
-facebook: urlFacebook   # Opcional
-telegram: urlTelegram   # Opcional
+date:   2017-08-16 21:43:19 -0300             # Obrigatorio
+categories: reflexao        # Obrigatorio [SUPORTE A MUTIPLAS CATEGORIAS SEPARADOS POR HÍFEN]
+author_url: UrlMedium       # Opcional
+twitter: urlTwitter         # Opcional
+facebook: urlFacebook       # Opcional
+telegram: urlTelegram       # Opcional
+description: "Sobre Você"   # Opcional
 author: 
     name: "Seu Nome" # Obrigatorio
     email: "seuEmail@exemplo.com" #Obrigatorio para o Gravatar!

@@ -5,7 +5,6 @@ date:   2017-08-20 10:10:19 -0300
 categories: reflexao
 author:
     name: "William Correa"
-    decription: false
 ---
 
 Não é de hoje que gasto umas boas horas do meu dia pensando em como ser um desenvolvedor melhor. Provavelmente por ter feito um caminho diferente da maioria dos colegas de trabalho, tenha sido uma constante na minha carreira como programador ter que aprender duas vezes mais rápido. Enquanto meus colegas de profissão geralmente começaram cedo com algum interesse por computadores e interagindo com programação em algum nível na infância e adolescência eu só li um código-fonte por volta dos 26.

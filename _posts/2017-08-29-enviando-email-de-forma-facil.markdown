@@ -1,14 +1,15 @@
 ---
 layout: post
 title:  "Enviar e-mail nunca foi tão facil!"
-date:   2017-08-24 01:20:00 -0300
+date:   2017-08-29 05:20:00 -0300
 categories: "tutorial-dicas-surpresas"
 author:
     name: "Rafael Gomes"
-email: "rafaelgomesgouve@gmail.com"
+    email: "rafaelgomesgouve@gmail.com"
+    author_url: "https://www.rafaelgomes.ga"
 twitter: null
 facebook: null
-telegram: null
+telegram: "https://t.me/raitoya"
 gravatar: true
 ---
 

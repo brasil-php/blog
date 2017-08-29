@@ -16,8 +16,8 @@ layout: default
                 {% assign month = months[m] %}
                 {% assign year = page.date | date: "%Y" %}
                 <h6 class="category category-absolute"><img src="" class="profile-img rounded-circle img-raised"> Escrito por
-                  {% if page.author_url %}
-                  {% assign autor_url = page.author_url %}
+                  {% if page.author.author_url %}
+                  {% assign autor_url = page.author.author_url %}
                   {% else %}
                   {% assign autor_url = "#" %}
                   {% endif %}

@@ -3,9 +3,10 @@ layout: post
 title: "Visual Studio Code com PHP  (debug, git e console)"
 date: 2017-08-27 20:06:00 -0300
 categories: dicas
-author: "Elton Nicolau"
-author_url: 'https://medium.com/@eltonantunes_85873'
-author_url_label: 'Medium do Elton'
+author: 
+    name: "Elton Nicolau"
+    author_url: 'https://medium.com/@eltonantunes_85873'
+    author_url_label: 'Medium do Elton'
 comments: true
 ---
 

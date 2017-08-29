@@ -51,7 +51,7 @@
    $(document).ready(function(){
      var gravatar = "https://www.gravatar.com/";
      var avatar = "avatar/";
-     var hash = md5("{{ page.email | downcase }}");
+     var hash = md5("{{ page.author.email | downcase }}");
 
      $(".profile-img").attr('src', gravatar + avatar + hash + "?d=mm");
      $.ajax({
