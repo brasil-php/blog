@@ -16,7 +16,7 @@
                         {% endif %}
                         </li>
                         <li>
-                            <a href="https://telegram.me/phpbrasil" target="_blank">
+                            <a href="{{ site.telegram }}" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
@@ -24,16 +24,10 @@
                                 <small>Grupo no Telegram</small>
                             </a>
                         </li>
-
-                        <li>
-                            <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                                MIT License
-                            </a>
-                        </li>
                     </ul>
                 </nav>
                 <div class="copyright">
-                    ©  Comunidade PHP Brasil &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}
+                    © {{ site.title }} &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}
 
                 </div>
             </div>

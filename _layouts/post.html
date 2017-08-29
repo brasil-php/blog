@@ -13,8 +13,10 @@ layout: default
                 <h6 class="category category-absolute"><img src="" class="profile-img rounded-circle img-raised"> Escrito por
                   <a href="#phpblog">
                       {% if page.author.name %}{{ page.author.name }}{% else %}{{ site.title }}{% endif %}
-                  </a>. em {{ page.date | date: "%B %-d, %Y" }}
+                  </a>. em {{ page.date | date: "%B %-d, %Y" }} 
+                  <p class="categories"><span class="badge badge-success"> {{ page.categories }}</span> </p>
                 </h6>
+                
             </div>
         </div>
 </div>
@@ -42,8 +44,8 @@ layout: default
           {% endif %}
     </div>
       <hr>
-            <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a>
-            </small></p>
+            <div class="content pager"><p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a>
+            </small></p></div>
       <hr>
       {% if page.author.description %}
       <div class="profile">
