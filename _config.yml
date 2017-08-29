@@ -10,7 +10,7 @@ header-img: blog/assets/img/elephant.jpg
 github_username:  brasil-php
 highlighter: rouge
 permalink: pretty
-paginate: 4
+paginate: 10
 comments: true
 disqus:
   shortname: https-brasil-php-github-io-blog
