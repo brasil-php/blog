@@ -7,14 +7,12 @@
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 	<!-- CSS Files -->
-    <link href="/blog/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/blog/assets/css/now-ui-kit.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/blog/assets/css/brasil-php.css">
+    <link href="{{ "/assets/css/bootstrap.min.css" | relative_url }}" rel="stylesheet" />
+    <link href="{{ "/assets/css/now-ui-kit.css" | relative_url }}" rel="stylesheet"/>
+    <link href="{{ "/assets/css/brasil-php.css" | relative_url }}" rel="stylesheet">
 
 
     <!-- <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">

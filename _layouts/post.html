@@ -6,70 +6,61 @@ layout: default
         </div>
         <div class="container">
             <div class="content-center brand">
-                <img class="n-logo" src="{{ site.logo }}" alt="">
-                <h1 class="h1-seo">{{ site.title | downcase | md5 }}</h1>
+                <h1 class="h1-seo">{{ page.title }}</h1>
                 {% if page.subtitle %}
                 <h3>{{ page.subtitle }}</h3>
                 {% endif %}
-                <h6 class="category category-absolute">Postado por
-                        <a href="#phpblog" target="_blank">
-                            {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}
-                        </a>. em {{ page.date | date: "%B %-d, %Y" }}
+                <h6 class="category category-absolute"><img src="" class="profile-img rounded-circle img-raised"> Escrito por
+                  <a href="#phpblog" target="_blank">
+                      {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}
+                  </a>. em {{ page.date | date: "%B %-d, %Y" }}
                 </h6>
             </div>
-            
         </div>
-    </div>
+</div>
 
-    <div class="section section-about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="section-story-overview">
-                    {{ content }}
-                </div>
-                    </div>
-                </div>
-                
-                <hr>
-                
-                                  <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a></small></p>
-                
-                
-                                  <ul class="pager">
-                                    {% if page.previous.url %}
-                                      <li class="previous">
-                                            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Anterior</a>
-                                      </li>
-                                    {% endif %}
-                
-                                    {% if page.next.url %}
-                                      <li class="next">
-                                          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Próximo &rarr;</a>
-                                      </li>
-                                    {% endif %}
-                                </ul>
-                
-                                <hr>
-
-                <div class="separator separator-primary"></div>
-                
-                
-                {% include disqus_comments.html %}
+<div class="section section-about-us">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="section-story-overview">
+                {{ content }}
             </div>
         </div>
-    <!-- <div class="section section-about-us">
-            <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                            {{ content }}
-                              
-            
-                    {% include disqus_comments.html %}
-                        
-                        </div>
+    </div>
+    <div class="container pager">
+            {% if page.previous.url %}
+            <div class="previous pull-left">
+                  <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" class="btn btn-primary btn-round" title="{{page.previous.title}}">&larr; Anterior</a>
+            </div>
+          {% endif %}
+
+          {% if page.next.url %}
+            <div class="next pull-right">
+                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" class="btn btn-primary btn-round" title="{{page.next.title}}">Próximo &rarr;</a>
+            </div>
+          {% endif %}
+    </div>
+      <hr>
+            <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a>
+            </small></p>
+      <hr>
+      <div class="profile">
+          <div class="row">
+              <div class="col-xs-3"><img src="" class="profile-img rounded-circle"></div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h1>{{ page.author }}</h1>
+                  </div>
+                  <div class="col-md-10 gravatar-description">
+                    {{ page.author.description }}
+                  </div>
                 </div>
-        </div> -->
-
-
-
+              </div>
+          </div>
+      </div>
+      <div class="separator separator-primary"></div>
+      {% include disqus_comments.html %}
+  </div>
+</div>

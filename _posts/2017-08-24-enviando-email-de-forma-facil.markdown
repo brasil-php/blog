@@ -4,6 +4,7 @@ title:  "Enviar e-mail nunca foi tão facil!"
 date:   2017-08-24 01:20:00 -0300
 categories: dicas
 author: "Rafael Gomes"
+email: "rafaelgomesgouve@gmail.com"
 ---
 
 A magia do PHPMailer!
