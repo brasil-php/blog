@@ -14,23 +14,30 @@ header-img: "blog/assets/img/ste-elephant.jpg"
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    {% assign months = "Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro" | split: "|" %}
+    {% assign m = post.date | date: "%-m" | minus: 1 %}
+    {% assign day = post.date | date: "%d" %}
+    {% assign month = months[m] %}
+    {% assign year = post.date | date: "%Y" %}
+    <p class="post-meta">Postado por {% if post.author.name %}{{ post.author.name }}{% else %}{{ site.title }}{% endif %} em {{ day }} de {{ month }} de {{ year }}</p>
+
 </div>
 <hr>
 {% endfor %}
 
 
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
+<div class="container pager">
     {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
+    <div class="previous pull-left">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" class="btn btn-primary btn-round">&larr; Anterior</a>
+    </div>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <div class="next pull-right">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" class="btn btn-primary btn-round">Próximo &rarr;</a>
+    </div>
+  {% endif %}
+</div>
 {% endif %}

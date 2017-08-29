@@ -5,6 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Com base nisso decidimos criar um blog com materiais que são comentados e discutidos por lá ;)
 baseurl: "/blog"
 url: "https://brasil-php.github.io"
+telegram: "https://telegram.me/phpbrasil"
+logo: "/blog/assets/img/logo-php-brasill-1.png"
 header-img: blog/assets/img/elephant.jpg
 github_username:  brasil-php
 highlighter: rouge
@@ -21,4 +23,3 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
-
