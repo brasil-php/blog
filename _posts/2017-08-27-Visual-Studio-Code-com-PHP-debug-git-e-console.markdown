@@ -7,6 +7,7 @@ author:
     name: "Elton Nicolau"
     author_url: 'https://medium.com/@eltonantunes_85873'
     author_url_label: 'Medium do Elton'
+
 comments: true
 ---
 
