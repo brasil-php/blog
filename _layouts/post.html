@@ -16,7 +16,13 @@ layout: default
                 {% assign month = months[m] %}
                 {% assign year = page.date | date: "%Y" %}
                 <h6 class="category category-absolute"><img src="" class="profile-img rounded-circle img-raised"> Escrito por
-                  <a href="#phpblog">
+                  {% if page.author_url %}
+                  {% assign autor_url = page.author_url %}
+                  {% else %}
+                  {% assign autor_url = "#" %}
+                  {% endif %}
+                  
+                    <a href="{{ autor_url }}">
                       {% if page.author.name %}{{ page.author.name }}{% else %}{{ site.title }}{% endif %}
                   </a> em {{ day }} de {{ month }}, {{ year }}.
                   {% assign valores = page.categories | split: '-' %}
