@@ -3,8 +3,7 @@ layout: post
 title: "Doctrine MongoDB ODM com ZF3 - Instalação, configuração e primeiro uso"
 date: 2017-08-20 14:39:38 -0300
 categories: deselvolvimento
-author: 
-    name: "Jociel Souza"
+author: "Jociel Souza"
 ---
 # Doctrine MongoDB ODM com ZF3 - Instalação, configuração e primeiro uso
 

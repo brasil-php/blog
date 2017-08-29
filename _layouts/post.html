@@ -1,112 +1,55 @@
 ---
 layout: default
 ---
-<div class="page-header clear-filter" style="height: 69vh;" filter-color="blue">
-        <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
-        </div>
-        <div class="container">
-            <div class="content-center brand">
-                <h1 class="h1-seo">{{ page.title }}</h1>
-                {% if page.subtitle %}
-                <h3>{{ page.subtitle }}</h3>
-                {% endif %}
-                {% assign months = "Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro" | split: "|" %}
-                {% assign m = page.date | date: "%-m" | minus: 1 %}
-                {% assign day = page.date | date: "%d" %}
-                {% assign month = months[m] %}
-                {% assign year = page.date | date: "%Y" %}
-                <h6 class="category category-absolute"><img src="" class="profile-img rounded-circle img-raised"> Escrito por
-                  {% if page.author.author_url %}
-                  {% assign autor_url = page.author.author_url %}
-                  {% else %}
-                  {% assign autor_url = "#" %}
-                  {% endif %}
-                  
-                    <a href="{{ autor_url }}">
-                      {% if page.author.name %}{{ page.author.name }}{% else %}{{ site.title }}{% endif %}
-                  </a> em {{ day }} de {{ month }}, {{ year }}.
-                  {% assign valores = page.categories | split: '-' %}
-                  <p class="categories">
-                  {% for valor in valores %}
-                  <span class="badge badge-success"> {{ valor | remove: '["' | remove: '"]' }} </span>
-                  {% endfor %}
-                </p>
-                </h6>
-                
-            </div>
-        </div>
-</div>
 
-<div class="section section-about-us">
-  <div class="container">
-      
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-            <div class="section-story-overview">
-                {{ content }}
-            </div>
-        </div>
-    </div>
-    <div class="container pager">
-            {% if page.previous.url %}
-            <div class="previous pull-left">
-                  <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" class="btn btn-primary btn-round" title="{{page.previous.title}}">&larr; Anterior</a>
-            </div>
-          {% endif %}
-
-          {% if page.next.url %}
-            <div class="next pull-right">
-                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" class="btn btn-primary btn-round" title="{{page.next.title}}">Próximo &rarr;</a>
-            </div>
-          {% endif %}
-    </div>
-      <hr>
-            <div class="content pager"><p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a>
-            </small></p></div>
-      <hr>
-      {% if page.author.description or page.gravatar %}
-      <div class="profile">
-          <div class="row">
-              <div class="col-xs-3"><img src="" class="profile-img rounded-circle"></div>
-              <div class="col-md-10">
-                <div class="row">
-                  <div class="col-md-10">
-                    <h1>{{ page.author.name }}</h1>
-                  </div>
-                  <div class="col-md-10 gravatar-description">
-                    {{ page.author.description }}
-                  </div>
-                  <div class="col-md-10">
-                        <div class="button-container">
-                            {% if page.twitter %}
-                            <a href="{{ page.twitter }}" class="btn btn-info btn-round btn-lg btn-icon" style="
-                            background-color: #1da1f2;
-                        " rel="tooltip" title="" data-original-title="Follow me on Twitter">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            {% endif %}
-                            {% if page.facebook %}
-                            <a href="{{ page.facebook }}" class="btn btn-info btn-round btn-lg btn-icon" style="
-                            background-color: #3b5998;
-                        " rel="tooltip" title="" data-original-title="Follow me on Twitter">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            {% endif %}
-                            {% if page.telegram %}
-                            <a href="{{ page.telegram }}" class="btn btn-info btn-round btn-lg btn-icon" style="
-                            background-color: #0088cc;
-                        " rel="tooltip" title="" data-original-title="Follow me on Twitter">
-                                <i class="fa fa-telegram"></i>
-                            </a>
-                            {% endif %}
-                        </div>
-                  </div>
+<header class="intro-header" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1 style="text-shadow: 2px 1px 0px rgb(30, 30, 30);">{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    	<h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                 </div>
-              </div>
-          </div>
-      </div>
-      {% endif %}
-      <div class="separator separator-primary"></div>
-      {% include disqus_comments.html %}
-  </div>
-</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				{{ content }}
+                  <hr>
+
+                  <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a></small></p>
+
+
+                  <ul class="pager">
+                    {% if page.previous.url %}
+                      <li class="previous">
+                            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Anterior</a>
+                      </li>
+                    {% endif %}
+
+                    {% if page.next.url %}
+                      <li class="next">
+                          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Próximo &rarr;</a>
+                      </li>
+                    {% endif %}
+                </ul>
+
+                <hr>
+
+		{% include disqus_comments.html %}
+		    
+            </div><!-- ./col-8 -->
+        </div><!-- ./row -->
+    </div><!-- ./container -->
+
+</article>
+
+

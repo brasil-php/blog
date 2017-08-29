@@ -3,8 +3,7 @@ layout: post
 title:  "Segurança como prioridade"
 date:   2017-08-17 21:46:00 -0300
 categories: securança
-author:
-    name: "William Correa"
+author: "William Correa"
 ---
 O assunto desse post é simples, muito simples. É dar um recado na verdade.
 

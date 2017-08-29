@@ -3,9 +3,7 @@ layout: post
 title:  "Uma questão de sustentabilidade"
 date:   2017-08-25 15:45:00 -0300
 categories: reflexao
-author: 
-    name: "William Correa"
-
+author: "William Correa"
 ---
 Como pessoas imersas em tecnologia, que somos, não é incomum termos acesso a materiais que são copiados dos autores sem as devidas permissões. Obviamente que isso vai continar a acontecer e eu estou longe de querer me meter a dizer o que cada um deve ou não fazer da sua própria vida. Quero falar de um viés da moeda que poucos vêem; a sustentabildade de um sistema.
 
