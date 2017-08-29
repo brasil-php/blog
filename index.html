@@ -19,7 +19,7 @@ header-img: "blog/assets/img/ste-elephant.jpg"
     {% assign day = post.date | date: "%d" %}
     {% assign month = months[m] %}
     {% assign year = post.date | date: "%Y" %}
-    <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} em {{ day }} de {{ month }} de {{ year }}</p>
+    <p class="post-meta">Postado por {% if post.author.name %}{{ post.author.name }}{% else %}{{ site.title }}{% endif %} em {{ day }} de {{ month }} de {{ year }}</p>
 
 </div>
 <hr>

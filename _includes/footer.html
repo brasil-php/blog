@@ -52,7 +52,8 @@
 	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
     <script src="/blog/assets/js/now-ui-kit.js" type="text/javascript"></script>
     <script src="/blog/assets/js/md5.js" type="text/javascript"></script>
-	<script type="text/javascript">
+    {% if page.gravatar %}
+    <script type="text/javascript">
    $(document).ready(function(){
      var gravatar = "https://www.gravatar.com/";
      var avatar = "avatar/";
@@ -70,4 +71,5 @@
        }
      });
    });
-	</script>
+    </script>
+    {% endif %}

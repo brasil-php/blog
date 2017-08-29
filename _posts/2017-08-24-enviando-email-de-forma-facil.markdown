@@ -3,8 +3,11 @@ layout: post
 title:  "Enviar e-mail nunca foi tão facil!"
 date:   2017-08-24 01:20:00 -0300
 categories: dicas
-author: "Rafael Gomes"
+author:
+    name: "Rafael Gomes"
+    description: "My name"
 email: "rafaelgomesgouve@gmail.com"
+gravatar: true
 ---
 
 A magia do PHPMailer!

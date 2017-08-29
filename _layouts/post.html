@@ -11,8 +11,8 @@ layout: default
                 <h3>{{ page.subtitle }}</h3>
                 {% endif %}
                 <h6 class="category category-absolute"><img src="" class="profile-img rounded-circle img-raised"> Escrito por
-                  <a href="#phpblog" target="_blank">
-                      {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}
+                  <a href="#phpblog">
+                      {% if page.author.name %}{{ page.author.name }}{% else %}{{ site.title }}{% endif %}
                   </a>. em {{ page.date | date: "%B %-d, %Y" }}
                 </h6>
             </div>
@@ -45,13 +45,14 @@ layout: default
             <p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a>
             </small></p>
       <hr>
+      {% if page.author.description %}
       <div class="profile">
           <div class="row">
               <div class="col-xs-3"><img src="" class="profile-img rounded-circle"></div>
               <div class="col-md-10">
                 <div class="row">
                   <div class="col-md-10">
-                    <h1>{{ page.author }}</h1>
+                    <h1>{{ page.author.name }}</h1>
                   </div>
                   <div class="col-md-10 gravatar-description">
                     {{ page.author.description }}
@@ -60,6 +61,7 @@ layout: default
               </div>
           </div>
       </div>
+      {% endif %}
       <div class="separator separator-primary"></div>
       {% include disqus_comments.html %}
   </div>

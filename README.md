@@ -17,6 +17,20 @@ Como nem tudo são flores o chat não é uma boa base de conhecimentos. Não fic
 
 Além de persistir as threads também acreditamos que seja possível registrar a relevância de um tema para a comunidade. Sendo assim quem identificar essa demanda poderá criar uma issue para que alguém que conheça algo sobre o assunto crie uma `post` para toda a comunidade usufruir desse conhecimento
 
+## Novo guia para postagens
+
+O sistema conta com um novo guia para postagens com integração ao Gravatar
+
+```
+---
+layout: post
+title:  "Qual melhor framework PHP do mundo!"
+date:   2017-08-16 21:43:19 -0300
+categories: reflexao
+author: 
+    name: "Erik Figueiredo"
+---
+```
 ----
 
 Vida longa ao PHP
