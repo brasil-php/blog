@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/blog"
 telegram: "https://telegram.me/phpbrasil"
 url: "https://brasil-php.github.io"
-logo: "/blog/assets/img/logo-php-brasill-2.png"
+logo: "/blog/assets/img/logo-php-brasill-1.png"
 header-img: blog/assets/img/elephant.jpg
 github_username:  brasil-php
 highlighter: rouge
