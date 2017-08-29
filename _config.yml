@@ -4,14 +4,14 @@ description: > # this means to ignore newlines until "baseurl:"
   Se você conhece o Grupo de Telegram sabe que lá é correria!
   Com base nisso decidimos criar um blog com materiais que são comentados e discutidos por lá ;)
 baseurl: "/blog"
-telegram: "https://telegram.me/phpbrasil"
 url: "https://brasil-php.github.io"
+telegram: "https://telegram.me/phpbrasil"
 logo: "/blog/assets/img/logo-php-brasill-1.png"
 header-img: blog/assets/img/elephant.jpg
 github_username:  brasil-php
 highlighter: rouge
 permalink: pretty
-paginate: 2
+paginate: 10
 comments: true
 disqus:
   shortname: https-brasil-php-github-io-blog
@@ -19,8 +19,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
 markdown: kramdown
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
-gems:
-  - liquid-md5

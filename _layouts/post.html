@@ -19,7 +19,12 @@ layout: default
                   <a href="#phpblog">
                       {% if page.author.name %}{{ page.author.name }}{% else %}{{ site.title }}{% endif %}
                   </a> em {{ day }} de {{ month }}, {{ year }}.
-                  <p class="categories"><span class="badge badge-success"> {{ page.categories }}</span> </p>
+                  {% assign valores = page.categories | split: '-' %}
+                  <p class="categories">
+                  {% for valor in valores %}
+                  <span class="badge badge-success"> {{ valor | remove: '["' | remove: '"]' }} </span>
+                  {% endfor %}
+                </p>
                 </h6>
                 
             </div>
@@ -53,7 +58,7 @@ layout: default
             <div class="content pager"><p><small>Quer melhorar este artigo? Vá até o <a href="https://github.com/brasil-php/blog">repositório deste blog</a>
             </small></p></div>
       <hr>
-      {% if page.author.description && page.author.name | page.author.name and page.author.email %}
+      {% if page.author.name or page.gravatar == true %}
       <div class="profile">
           <div class="row">
               <div class="col-xs-3"><img src="" class="profile-img rounded-circle"></div>
@@ -64,6 +69,17 @@ layout: default
                   </div>
                   <div class="col-md-10 gravatar-description">
                     {{ page.author.description }}
+                  </div>
+                  <div class="col-md-10">
+                        <div class="button-container">
+                                <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a>
+                                <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="" data-original-title="Follow me on Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="" data-original-title="Follow me on Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
                   </div>
                 </div>
               </div>

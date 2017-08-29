@@ -2,11 +2,14 @@
 layout: post
 title:  "Enviar e-mail nunca foi tão facil!"
 date:   2017-08-24 01:20:00 -0300
-categories: tutorial, dicas
+categories: "tutorial-dicas-surpresas"
 author:
     name: "Rafael Gomes"
 email: "rafaelgomesgouve@gmail.com"
-gravatar: false
+twitter: null
+facebook: null
+telegram: null
+gravatar: true
 ---
 
 ## PHPMailer para iniciantes!
