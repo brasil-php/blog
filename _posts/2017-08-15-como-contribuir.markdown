@@ -3,7 +3,12 @@ layout: post
 title:  "Como contribuir!"
 date:   2017-08-15 21:43:19 -0300
 categories: ajuda
-author: "William Correa"
+author: 
+  name: "William Correa"
+  email: "wilcorrea@gmail.com"
+  author_url: "https://wilcorrea.rocks"
+  telegram: "https://t.me/wilcorrea"
+gravatar: true
 ---
 Sejam bem-vindos ao nosso blog!
 
