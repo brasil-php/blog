@@ -2,15 +2,15 @@
 layout: post
 title: "Relatórios em PHP(Laravel) com JasperReports  - Parte 1"
 date: 2017-08-29 16:24:00 -0300
-categories: dicas, tutoriais
+categories: dicas-tutoriais
+twitter: "@eltonnicolau"
+facebook: https://www.facebook.com/elton182
+telegram: "http://t.me/elton182"
 author: 
     name: "Elton Nicolau"
     author_url: 'https://medium.com/@eltonantunes_85873'
     author_url_label: 'Medium do Elton'
     email: eltonantunes@hotmail.com
-    twitter: "@eltonnicolau"
-    facebook: https://www.facebook.com/elton182
-    telegram: "http://t.me/elton182"
 comments: true
 ---
 # Relatórios em PHP(Laravel) com JasperReports — Parte 1
