@@ -8,7 +8,7 @@ author:
     author_url: 'https://medium.com/@eltonantunes_85873'
     author_url_label: 'Medium do Elton'
     email: eltonantunes@hotmail.com
-    twitter: @eltonnicolau
+    twitter: "@eltonnicolau"
     facebook: https://www.facebook.com/elton182
     telegram: "http://t.me/elton182"
 comments: true
