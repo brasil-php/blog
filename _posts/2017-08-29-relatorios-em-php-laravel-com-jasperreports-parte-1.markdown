@@ -7,7 +7,10 @@ author:
     name: "Elton Nicolau"
     author_url: 'https://medium.com/@eltonantunes_85873'
     author_url_label: 'Medium do Elton'
-
+    email: eltonantunes@hotmail.com
+    twitter: @eltonnicolau
+    facebook: https://www.facebook.com/elton182
+    telegram: "http://t.me/elton182"
 comments: true
 ---
 # Relatórios em PHP(Laravel) com JasperReports — Parte 1
@@ -103,18 +106,18 @@ Coloque um nome de sua preferência e configure a conexão, é um processo bem s
 
 Agora vamos fazer a query
 
-![](https://cdn-images-1.medium.com/max/800/1*5nmfVutZPg4Vt4rHa5Ux8g.png)
+![Query](https://cdn-images-1.medium.com/max/800/1*5nmfVutZPg4Vt4rHa5Ux8g.png)
 Clique no botão em detalhe para editar a query
 
 Selecione o Adapter criado, faça a query e clique em Read Fields que o jasper irá automaticamente mapear os campos do relatório
 
 ```select name, address, city, phone, since from customers```
 
-![](https://cdn-images-1.medium.com/max/800/1*l8zkch0bHcD3wTiIAjfhKw.png}
+![](https://cdn-images-1.medium.com/max/800/1*l8zkch0bHcD3wTiIAjfhKw.png)
 
 Agora será possível pegar os campos e colocar no relatório
 
-!{](https://cdn-images-1.medium.com/max/800/1*lz9RgMHFIFjjjAG4zcbY3g.png)
+![](https://cdn-images-1.medium.com/max/800/1*lz9RgMHFIFjjjAG4zcbY3g.png)
 
 No sessão Outline é possível arrastar os campos para o relatório
 
