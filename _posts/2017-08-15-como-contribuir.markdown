@@ -7,7 +7,9 @@ author:
   name: "William Correa"
   email: "wilcorrea@gmail.com"
   author_url: "https://wilcorrea.rocks"
-  telegram: "https://t.me/wilcorrea"
+twitter: "https://twitter.com/wilcorrea"
+facebook: "https://fb.com/wilcorrea.rocks"
+telegram: "https://t.me/wilcorrea"
 gravatar: true
 ---
 Sejam bem-vindos ao nosso blog!
