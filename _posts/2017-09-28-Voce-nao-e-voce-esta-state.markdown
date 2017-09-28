@@ -216,6 +216,7 @@ Este estado não permite voltar para nenhum estado anterior.
 
 Como se dá a mágica?
 
+```php
 <?php
 /**
  * Created by PhpStorm.
