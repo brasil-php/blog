@@ -431,4 +431,4 @@ O mais interessante de usar ferramentas de testes é testar as exceptions previs
 
 Até a parte 2 do artigo.
 
-PS2.: este é o repo.
+PS2.: este é o [repo](https://github.com/IgorDePaula/StatePattern).
