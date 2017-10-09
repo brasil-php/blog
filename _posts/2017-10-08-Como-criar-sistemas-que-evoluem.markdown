@@ -28,7 +28,7 @@ A web está consolidada. É isso! Achamos nosso jeito de trabalhar. Um projeto e
 
 ### 1. Centralize ações. 
 
-Priorize criar funções e/ou classes para tudo o que for uma operação comum. Se quiser um nome para estudar pode pesquisar por DRY ou KISS que são conceitos que forjam essas ideias de não repetir trechos nem operações. Encapsular relações com o sistema é sempre útil.
+Priorize criar funções e/ou classes para tudo o que for uma operação comum. Se quiser um nome para estudar pode pesquisar por DRY ou KISS que são conceitos que forjam essas ideias de não repetir trechos nem operações. Encapsular relações com o sistema é sempre útil. A ideia de separar sua aplicação no formato em que está descrito na imagem é simplesmente muito boa. Você vai poder usufruir de recursos como middlewares, distribuir melhor suas classes e esclarecer vários conceitos de organização.
 
 #### 1.1. Acesso ao HTTP
 Bad
