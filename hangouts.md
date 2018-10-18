@@ -29,7 +29,7 @@ Antes que eu esqueça, [link do nosso canal no Youtube](https://www.youtube.com/
 
 Se quiser saber quando vai rolar o próximo:
 
- - [Se inscreva no nosso canal do Telegra](https://t.me/phpbrasil)
+ - [Se inscreva no nosso canal do Telegram](https://t.me/phpbrasil)
  - [Se inscreva no nosso canal do Youtube (Ativa o sininho)](https://www.youtube.com/channel/UCXrNXDef4ZRUrYyIGZ0rXlg?view_as=subscriber)
 
 E é isso aí, até o próximo
