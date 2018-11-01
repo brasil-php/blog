@@ -19,9 +19,9 @@ gravatar: true
 
 TDD do inglês Test Driven Development ou em nossa língua nativa Desenvolvimento Guiado por Testes basicamente consiste em seguir um simples algoritmo de 3 passos para o desenvolvimento de software.
 
-1 - Você não tem permissão de escrever um código de produção se não tiver escrito um teste antes.
-2 - Escreva um teste em que o seu código de produção falhe.
-3 - Escreva o código de produção que faça seu teste que falhou no passo anterior passar 
+1. - Você não tem permissão de escrever um código de produção se não tiver escrito um teste antes.
+1. - Escreva um teste em que o seu código de produção falhe.
+1. - Escreva o código de produção que faça seu teste que falhou no passo anterior passar 
 
 Os passos devem ser repetidos até termos um código que cubra o máximo de possibilidade de falhas possível.
 
