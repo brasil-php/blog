@@ -17,11 +17,13 @@ gravatar: true
 
 ## TDD
 
-Durante sprints de desenvolvimento em SCRUM há situações que podem ser resumidas à imagem: 
+Estava estudando um pouco sobre TDD esses dias e vi o [artigo](https://code.tutsplus.com/tutorials/lets-tdd-a-simple-app-in-php--net-26186) que me fez pensar em algumas coisas interessantes e resolvi escrever esse post.
+
+Vou fazer algumas colocações sobre o material e mostrar alguns exemplos dele, recomendo darem uma lida no texto antes que eu curti demais. Durante sprints de desenvolvimento em SCRUM há situações que podem ser resumidas à imagem: 
 
 ![Persista!](https://snag.gy/WTI4w8.jpg)
 
-Há momentos do dia em que estamos com muito gás e outros que a nossa produtividade se esgota. Desde sistemas de pequena complexidade até em sistemas mais complexos há alguns CRUDs que se repetem como por exemplo CRUD de Autenticação e CRUD de ACL (Controle de Acesso), será que quando formos unir todas os módulos tudo funcionará conforme esperado? Acredito que a grande maioria saiba que as chances de erros inesperados é enorme e para contornarmos esse problema falaremos sobre a técnica de TDD que é uma grande aliada do programador. 
+Há momentos do dia em que estamos com muito gás e outros que a nossa produtividade se esgota. Desde sistemas de pequena complexidade até em sistemas mais complexos há alguns CRUDs que se repetem como por exemplo CRUD de Autenticação e CRUD de ACL (Controle de Acesso), será que quando formos unir todas os módulos tudo funcionará conforme esperado? Acredito que a grande maioria saiba que as chances de erros inesperados é enorme e para contornarmos esse problema falaremos sobre a técnica de TDD que é uma grande aliada do programador. As regras de TDD são: escreva testes, escreva código, refatore.
 
 TDD do inglês Test Driven Development ou em nossa língua nativa Desenvolvimento Guiado por Testes basicamente consiste em seguir um simples algoritmo de 3 passos para o desenvolvimento de software.
 
@@ -44,6 +46,7 @@ Fonte: [https://pt.wikipedia.org/wiki/Test_Driven_Development](https://pt.wikipe
 ## PHP Unit
 
 PHP Unit é uma ferramenta que permite desenvolvedores PHP a escreverem testes unitários e praticarem o TDD. PHP Unit é um framework completo criado por Sebastian Bergmann [https://github.com/sebastianbergmann](https://github.com/sebastianbergmann) com suporte à tecnica de mocking onde criamos objetos falsos que simulam comportamentos de objetos reais.
+
 Não entrarei nos detalhes da instalação desta ferramenta pois a própria documentação é bem rica e inclusive traduzida em português, o composer novamente é uma mão na roda para adicionar o PHP Unit ao nosso projeto.
 
 Fonte: [https://phpunit.de/](https://phpunit.de/)
@@ -55,18 +58,19 @@ Fonte: [https://phpunit.de/](https://phpunit.de/)
 - Perda de tempo;
 - TDD = software sem bug.
 
-
 ## O que ganho implementando TDD?
 
 - Menor custo para manutenção do software; 
 - Melhorar nas estimativas; 
 - Legibilidade do código; 
-- Design guiado pelo Testes.
+- Design guiado por Testes.
 
 Deixo um [repositório](https://github.com/eduardofg87/lets-tdd-a-simple-app) para quem está iniciando com TDD no PHP. 
 
-A estrutura dele é:
+A estrutura do projeto foi criada utilizando o comando **composer init** que facilita para seguirmos o [PSR-4](https://www.php-fig.org/psr/psr-4/), já os nomes de variáveis e o estilo de codificação procurei seguei [PSR-1](https://www.php-fig.org/psr/psr-1/) e [PSR-2](https://www.php-fig.org/psr/psr-2/), abaixo temos a estrutura do projeto:
 
+
+```
 - app
   - Wrapper.php
 - tests/
@@ -75,8 +79,10 @@ A estrutura dele é:
 - LICENSE
 - README.MD
 - composer.json
+```
 
-No arquivo FirstTest.php temos a implementação dos testes, eles foram escritos seguindo os passos de 1 a 3 e assim que foi escrito um método de teste logo em seguida foi escrito um método de produção:
+
+No arquivo FirstTest.php temos a implementação dos testes, eles foram escritos seguindo os passos de 1 a 3 e assim que foi escrito cada método de teste logo em seguida foi escrito cada método de produção:
 
 ### Testes - FirstTest.php
 
@@ -144,7 +150,6 @@ class WrapperTest extends TestCase {
     }
     
 }
-
 ```
 
 ### Código de produção Wrapper.php
@@ -216,7 +221,19 @@ class Wrapper {
 }
 ```
 
-Chegamos ao fim, espero ter contribuído com o aprendizado sobre TDD!
+Os testes foram criados na classe WrapperTest e possui 8 métodos que são:
 
+- testItShouldWrapAnEmptyString
+- testDoesNotWrapAShorterThanMaxCharsWord
+- testItWrapsAWordSeveralTimesIfItsTooLong
+- testItWrapsTwoWordsWhenSpaceAtTheEndOfLine
+- testItWrapsTwoWordsWhenLineEndIsAfterFirstWord
+- testItWraps3WordsOn2Lines
+- testItWraps2WordsOn3Lines
+- testItWraps2WordsAtBoundry
+
+O projeto se resume em uma classe de produção chamada Wrapper (Embalagem) e seu único método wrap que significa embrulhar/envolver recebe 2 argumentos $text e $lineLength, sendo o primeiro o texto que será envolvido e o segundo o tamanho da linha. O código de produção foi refatorado e a última versão do método wrap é capaz de passar todos os testes. Deixei comentado as versões anteriores do método wrap que passam os testes
+
+Chegamos ao fim, espero ter contribuído com o aprendizado sobre TDD!
 
 p.s.: Agradecimentos especiais ao [Will Correa](https://github.com/wilcorrea) pela revisão.
