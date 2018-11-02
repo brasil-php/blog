@@ -17,6 +17,9 @@ gravatar: true
 
 ## TDD
 
+Durante sprints de desenvolvimento em SCRUM há situação que podem ser resumidas à imagem: ![Image of persistence] (https://prnt.sc/ldl3vk) há momentos do dia em que estamos com muito gás e outros que a nossa produtividade se esgota.
+Agora vamos pensar em um projeto não tão pequeno que foi planejado para ser entregue para o cliente em 1 ou 2 anos, será que quando formos unir todas os módulos tudo funcionará conforme esperado? Acredito todos saibam que a chance de erros inesperados é enorme, por essa razão o TDD é tão importante e vem a ser uma metodologia que é uma grande aliada do programador. 
+
 TDD do inglês Test Driven Development ou em nossa língua nativa Desenvolvimento Guiado por Testes basicamente consiste em seguir um simples algoritmo de 3 passos para o desenvolvimento de software.
 
 1. - Você não tem permissão de escrever um código de produção se não tiver escrito um teste antes.
