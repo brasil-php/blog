@@ -17,14 +17,17 @@ gravatar: true
 
 ## TDD
 
-Durante sprints de desenvolvimento em SCRUM há situação que podem ser resumidas à imagem: ![Image of persistence] (https://prnt.sc/ldl3vk) há momentos do dia em que estamos com muito gás e outros que a nossa produtividade se esgota.
-Agora vamos pensar em um projeto não tão pequeno que foi planejado para ser entregue para o cliente em 1 ou 2 anos, será que quando formos unir todas os módulos tudo funcionará conforme esperado? Acredito todos saibam que a chance de erros inesperados é enorme, por essa razão o TDD é tão importante e vem a ser uma metodologia que é uma grande aliada do programador. 
+Durante sprints de desenvolvimento em SCRUM há situações que podem ser resumidas à imagem: 
+
+![Persista!](https://snag.gy/WTI4w8.jpg)
+
+Há momentos do dia em que estamos com muito gás e outros que a nossa produtividade se esgota. Desde sistemas de pequena complexidade até em sistemas mais complexos há alguns CRUDs que se repetem como por exemplo CRUD de Autenticação e CRUD de ACL (Controle de Acesso), será que quando formos unir todas os módulos tudo funcionará conforme esperado? Acredito que a grande maioria saiba que as chances de erros inesperados é enorme e para contornarmos esse problema falaremos sobre a técnica de TDD que é uma grande aliada do programador. 
 
 TDD do inglês Test Driven Development ou em nossa língua nativa Desenvolvimento Guiado por Testes basicamente consiste em seguir um simples algoritmo de 3 passos para o desenvolvimento de software.
 
-1. - Você não tem permissão de escrever um código de produção se não tiver escrito um teste antes.
-1. - Escreva um teste em que o seu código de produção falhe.
-1. - Escreva o código de produção que faça seu teste que falhou no passo anterior passar 
+1. Você não tem permissão de escrever um código de produção se não tiver escrito um teste antes.
+1. Escreva um teste em que o seu código de produção falhe.
+1. Escreva o código de produção que faça seu teste que falhou no passo anterior passar. 
 
 Os passos devem ser repetidos até termos um código que cubra o máximo de possibilidade de falhas possível.
 
