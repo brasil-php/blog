@@ -2,34 +2,67 @@
 layout: default
 ---
 
-<div class="page-header clear-filter" style="height: 69vh;" filter-color="blue">
-    <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
-    </div>
-    <div class="container">
-        <div class="content-center brand">
-            <img class="n-logo" src="{{ site.logo }}" height="111px" alt="">
-            <p>
-                <h4>{{ page.description }}</h4>
-                <div class="separator separator-primary"></div>
-            </p>
-        </div>
-        
-    </div>
-</div>
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
 
-<div class="section section-about-us">
-    <div class="container">
-        <div class="row">
-            <div class="section-story-overview col-md-9">
-                {{ content }}
-            </div>
-            <div class="col-md-3" style="background: #efefef; padding-top: 50px">
-                <h3>Links úteis</h3>
-                <h4><a href="http://www.phptherightway.com/" target="_blank">+ PHP: The Right Way</a></h4>
-                <h4><a href="https://github.com/brasil-php/comunidades" target="_blank">+ Curadoria de comunidades</a></h4>
-                <h4><a href="https://github.com/brasil-php/telegram" target="_blank">+ SDK para o Telegram</a></h4>
-            </div>
-        </div>
-    </div>
-</div>
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
 
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
